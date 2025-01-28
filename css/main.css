@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Skip Link Styling */
 .skip-link {
   position: absolute;
-  top: -20px; /* Slightly off-screen, but still visible */
+  top: -20px;
   left: 10px;
   background-color: #333;
   color: white;
@@ -95,13 +95,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   border-radius: 5px;
   z-index: 100;
-  opacity: 0.5; /* Slightly visible initially */
+  opacity: 0.5;
   transition: top 0.3s ease, opacity 0.3s ease;
 }
 
-
 .skip-link:hover, .skip-link:focus {
-  top: 10px; /* Moves the link into view when hovered or focused */
+  top: 10px;
   background-color: #555;
-  opacity: 1; 
+  opacity: 1;
 }
