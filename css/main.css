@@ -1,16 +1,11 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
@@ -20,52 +15,93 @@ h6 {
   padding: 0 1rem;
 }
 
-img {
-  width: 100%;
+.site-header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
 }
 
-.main-nav ul {
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-header .main-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
 }
 
-.main-nav ul li {
-  flex: 1;
+.site-header .main-nav ul li {
   text-align: center;
+  margin-right: 1rem;
 }
 
-.main-nav ul li a {
+.site-header .main-nav ul li a {
   display: block;
-  color: inherit;
+  color: white;
   text-decoration: none;
   font-size: 1.25rem;
 }
 
-form input,
-form textarea {
+.banner {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: white;
+}
+
+.main-content h2 {
+  color: #333;
+}
+
+.contact-section form input,
+.contact-section form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
 }
 
-form textarea {
-  min-height: 150px;
-  max-height: 150px;
-  height: 150px;
-  resize: none;
-}
-
-form button {
+.contact-section form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid #333;
   padding: 1rem;
   text-transform: uppercase;
+  color: #333;
+  cursor: pointer;
 }
 
 .site-footer {
-  padding: 2rem 0;
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Skip Link Styling */
+.skip-link {
+  position: absolute;
+  top: -20px; /* Slightly off-screen, but still visible */
+  left: 10px;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  z-index: 100;
+  opacity: 0.5; /* Slightly visible initially */
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+
+.skip-link:hover, .skip-link:focus {
+  top: 10px; /* Moves the link into view when hovered or focused */
+  background-color: #555;
+  opacity: 1; 
 }
